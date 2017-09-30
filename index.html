@@ -5,42 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Cheech's Pizza</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+		<img src="logo.png" alt="logo" height="200" width="350">
+        <h3>Order Form</h3>
+      </div>
+    </div>
     <div class="container">
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+      <div class="card border-secondary mb-3" style="max-width: 200rem;">
+			<form>
+			  <div class="form-row">
+				<div class="form-group col-sm-6">
+				  <label for="inputFullName" class="col-form-label">Full Name</label>
+				  <input type="text" class="form-control" id="inputFullName" placeholder="John Pizzo">
+				</div>
+				<div class="form-group col-sm-6">
+				  <label for="inputPhone" class="col-form-label">Phone</label>
+				  <input type="text" class="form-control" id="inputPhone" placeholder="1800-Piz-aLuv">
+				</div>
+				</div>
+				<div class="form-row col-sm-12">
+				  <label for="pizzaNum">Number of Pizzas</label>
+					<select class="form-control" id="pizzaNum">
+					</select>
+				</div>
 
+				<div class="form-row col-sm-12">
+					<label for="pizzaType">Type of Pizza</label>
+						<select class="form-control" id="pizzaType">
+						 
+						</select>
+				</div>
+				
+			</form>
+				
     </div> <!-- /container -->
+	<button type="submit" id="order" class="btn btn-primary">Order</button>
+	<div class="card border-secondary mb-3" id="summary" style="max-width: 200rem;">
+		
+	</div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="JavaScript.js"></script>
   </body>
 </html>
