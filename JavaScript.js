@@ -1,3 +1,7 @@
+// Megan Britt
+	//Cheech's Pizza
+	//09/29/17
+
 var pizzaType = ["Cheese","Veggie","Sausage","Pepperoni","Sly Special"];
 var amount = [1,2,3,4,5,6,7,8,9,10];
 
