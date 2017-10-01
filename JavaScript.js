@@ -27,7 +27,7 @@ function print(){
 	var tax = subtotal * .076;
 	var total = tax + subtotal;
 	summary.innerHTML = "<h3> Order Summary <br> Name: " + document.getElementById("inputFullName").value + 
-	"<br> Phone: " + document.getElementById("inputPhone").value + "<br> Pizza Type" +	pizzaType[document.getElementById("pizzaType").selectedIndex] +
+	"<br> Phone: " + document.getElementById("inputPhone").value + "<br> Pizza Type: " +	pizzaType[document.getElementById("pizzaType").selectedIndex] +
 	"<br>Number of Pizzas: " + amount[document.getElementById("pizzaNum").selectedIndex]+"<br> Subtotal: " + subtotal.toFixed(2) + "<br> Tax: " + tax.toFixed(2) + "<br> Total: " + total.toFixed(2) + "</h3>";
 }
 window.addEventListener("load", pizzaPop, false);
